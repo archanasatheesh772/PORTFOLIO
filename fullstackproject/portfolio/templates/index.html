@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archana Satheesh | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    background:#111;
+    padding:15px 0;
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00adb5;
+}
+
+/* Sections */
+section{
+    min-height:100vh;
+    padding:120px 50px 60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* Block styling */
+.block{
+    background:white;
+    width:80%;
+    max-width:900px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Home */
+#home{
+    background:linear-gradient(to right,#00adb5,#393e46);
+    color:white;
+}
+
+#home .block{
+    background:transparent;
+    box-shadow:none;
+}
+
+h1{
+    font-size:40px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#00adb5;
+}
+
+/* Skills List */
+.skills-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.skill{
+    background:#00adb5;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:white;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#00adb5;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#007f85;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+    </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+    <div class="block">
+        <h1>Archana Satheesh</h1>
+        <p>Python Developer | MCA Student | IT Enthusiast</p>
+        <button onclick="showMessage()">Contact Me</button>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="block">
+        <h2>About Me</h2>
+        <p>
+            Motivated Computer Applications graduate seeking an entry-level position in IT.
+            Strong foundation in Python, Java, SQL, and web technologies with hands-on project experience.
+            Quick learner with strong problem-solving skills and a collaborative mindset.
+        </p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="block">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">SQL</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">PHP</div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+    <div class="block">
+        <h2>Education</h2>
+        <p><strong>MCA</strong> – Mangalam College of Engineering (2025–2027)</p>
+        <p><strong>BCA</strong> – MES Golden Jubilee College (2022–2025)</p>
+        <br>
+        <h2>Projects</h2>
+        <p><strong>AI-Powered Phishing Detection System</strong></p>
+        <p>Developed a machine learning system to detect phishing websites.</p>
+        <br>
+        <p><strong>Vehicle Management System</strong></p>
+        <p>Built a web-based app to manage vehicle maintenance records.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Archana Satheesh | Kottayam, Kerala
+</footer>
+
+<script>
+function showMessage(){
+    alert("Email: archanasatheesh772@gmail.com\nPhone: 9895356768");
+}
+</script>
+
+</body>
+</html>
